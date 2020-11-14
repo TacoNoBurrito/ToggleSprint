@@ -1,0 +1,15 @@
+name: ToggleSprint
+version: 3.0
+api: "3.0.0"
+main: Taco\ToggleSprint\Main
+author: Taco
+website: github.com/TacoNoBurrito
+commands:
+  togglesprint:
+    description: Open ToggleSprint Menu
+    default: false
+
+permissions:
+  tsprint.command:
+    description: Get Access To ToggleSprint Menu
+
