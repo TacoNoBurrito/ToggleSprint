@@ -61,13 +61,8 @@ class Main extends PluginBase implements Listener {
         return $form;
     }
 
-    public function onMove(PlayerMoveEvent $event) : bool {
+    public function onMove(PlayerMoveEvent $event) : void {
         $player = $event->getPlayer();
-        if (isset($this->sprinting[$player->getName()])) {
-            $player->setSprinting();
-            return true;
-        }else{
-            return true;
-        }
+        if (isset($this->sprinting[$player->getName()])) $player->setSprinting();
     }
 }
